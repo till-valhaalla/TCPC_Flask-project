@@ -1,0 +1,51 @@
+<html>
+  <style>
+    table {
+      margin: 10px 0;
+      width: 100%;
+      table-layout: fixed;
+      margin-top: 30px;
+
+      font-family: Lato-Bold;
+      font-size: 18px;
+      /* color: #fff; */
+      line-height: 1.4;
+      /* background-color: #6c7ae0; */
+      margin-bottom: 20px;
+    }
+    thead {
+      color: white;
+      background: #dc3545;
+    }
+  </style>
+  <!-- Latest compiled and minified CSS -->
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+  />
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <body>
+    <div class="container-fluid">
+      <h3>入稿データ確認ツール</h3>
+      <div class="table-responsive">
+        <table width="100%" class="table table-hover table-bordered">
+          <thead class="">
+            <td>ファイル名</td>
+            <td>結果</td>
+          </thead>
+          {% for key, value in text.items() %}
+          <tr>
+            <th>{{ key }}</th>
+            <td>{{ value }}</td>
+          </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

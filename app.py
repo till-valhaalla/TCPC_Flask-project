@@ -6,7 +6,7 @@ from PIL import Image
 from pdf2image import convert_from_path
 import numpy
 def checkImage(fileName):
-    images = convert_from_path(os.path.join('C:/Users/Fatima Khalid/Documents/flask_Project/tempFiles',fileName)) #concat the absoulte path with the file name 
+    images = convert_from_path(os.path.join('C:/wamp64/wamp64/www/TCPC_Flask-project/tempFiles',fileName)) #concat the absoulte path with the file name 
     image = images.pop()
     #Cropping Image
     width, height = image.size
@@ -46,7 +46,7 @@ def checkImage(fileName):
         return "期待値フルカラー"
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER']='C:/Users/Fatima Khalid/Documents/flask_Project/tempFiles'
+app.config['UPLOAD_FOLDER']='C:/wamp64/wamp64/www/TCPC_Flask-project/tempFiles'
 @app.route('/')
 def upload_file():
    return render_template('index.html')
@@ -60,7 +60,7 @@ def upload_files():
       for file in f :
           file.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(file.filename)))
           a.update({file.filename:checkImage(secure_filename(file.filename))})
-          os.chdir(r"C:/Users/Fatima Khalid/Documents/flask_Project/tempFiles")
+          os.chdir(r"C:/wamp64/wamp64/www/TCPC_Flask-project/tempFiles")
           all_files = os.listdir()
           for f in all_files:
             os.remove(f)
