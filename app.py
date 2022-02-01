@@ -49,11 +49,11 @@ def checkImage(fileName):
 app = Flask(__name__)
 ##app.config['UPLOAD_FOLDER']='C:/wamp64/wamp64/www/TCPC_Flask-project/tempFiles'
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
-@app.route('https://pdf-color-detection.herokuapp.com/')
+@app.route('/')
 def upload_file():
    return render_template('index.html')
 
-@app.route('https://pdf-color-detection.herokuapp.com/uploader', methods = ['GET', 'POST'])
+@app.route('/uploader', methods = ['GET', 'POST'])
 def upload_files():
    if request.method == 'POST':
       f = request.files.getlist("file[]")
