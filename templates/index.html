@@ -1,7 +1,14 @@
 <style>
+  html {
+    height: 100%;
+  }
   body {
     width: 100%;
+    height: 100%;
     background-image: url("https://i.ibb.co/Z1CmMfg/photo-1496681859237-6039cd585c4e-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .contact-form {
     background: #fff;
@@ -136,11 +143,7 @@
     <div>
       <div class="container contact-form">
         <h3 class="topHeading">入稿データ確認ツール</h3>
-        <form
-          action="/uploader"
-          method="POST"
-          enctype="multipart/form-data"
-        >
+        <form action="/uploader" method="POST" enctype="multipart/form-data">
           <div class="row justify-content-center ml-5">
             <div class="col-md-6" style="margin-left: 50px">
               <div class="form-group">
