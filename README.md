@@ -9,6 +9,9 @@ The following tools were used to create the application:
 - FLask web python framework
 - Heroku service for hosting
 
+## Prerequisites
+Python >= 3.10.2
+
 ## To run locally:
 - install git
 - git clone https://github.com/JapanStation/Flask_TCPC.git
