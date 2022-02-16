@@ -14,7 +14,7 @@ Python >= 3.10.2
 
 ## To run locally:
 - install git
-- git clone https://github.com/JapanStation/Flask_TCPC.git
+- git clone https://github.com/till-valhaalla/TCPC_Flask-project.git
 - install python
 - install python3
 - install virtualenv
