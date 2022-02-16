@@ -6,8 +6,11 @@ Web application to analyze pdf and determine if the pdf contains greyscale or no
 
 ##Technologies:
 The following tools were used to creaate the application:
--FLask web python framework
--Heroku service for hosting
+- George Washington
+- John Adams
+- Thomas Jefferson
+- FLask web python framework
+- Heroku service for hosting
 
 ## To run locally:
 install git
