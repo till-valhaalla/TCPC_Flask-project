@@ -4,8 +4,8 @@
 
 Web application to analyze pdf and determine if the pdf contains greyscale or not 
 
-##Technologies:
-The following tools were used to creaate the application:
+## Technologies:
+The following tools were used to create the application:
 - FLask web python framework
 - Heroku service for hosting
 
